@@ -14,7 +14,7 @@ provider "azurerm" {
 
 ####
 
-resource "azurerm_resource_group" "this" {
+resource "azurerm_resource_group" "common" {
     name     = "common-${var.location}-rg"
     location = var.location
 }
