@@ -34,7 +34,7 @@ resource "azurerm_virtual_network" "hub" {
   subnet {
     name           = "hub-${var.location}-subnet"
     address_prefix = "10.200.0.0/24"
-    security_group = azurerm_network_security_group.common
+    security_group = azurerm_network_security_group.hub
   }
 
 }
