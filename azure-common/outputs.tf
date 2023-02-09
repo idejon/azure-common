@@ -36,3 +36,11 @@ output "azurerm_virtual_network_address_space" {
 output "azurerm_virtual_network_subnet_hub_id" {
   value = azurerm_virtual_network.hub.subnet.*.id[0]
 }
+
+output "azurerm_key_vault_id" {
+  value = azurerm_key_vault.hub.id
+}
+
+output "azurerm_key_vault_uri" {
+  value = azurerm_key_vault.hub.vault_uri
+}
